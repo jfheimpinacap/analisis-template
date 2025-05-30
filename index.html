@@ -1,0 +1,121 @@
+<!-- Indica al navegador que el documento usa HTML5 -->
+<!DOCTYPE html>
+
+<!-- Etiqueta raíz de un documento HTML. Aquí comienza el código HTML -->
+<html lang="es"> <!-- El atributo "lang='es'" indica que el idioma principal es español -->
+
+<head> <!-- Sección del encabezado del documento, no visible directamente en la página -->
+    
+    <!-- Define el conjunto de caracteres que se usará (UTF-8 es el estándar para la mayoría de idiomas) -->
+    <meta charset="UTF-8">
+    
+    <!-- Hace que el diseño se adapte correctamente a pantallas de dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Landing Page</title>
+    
+    <!-- Enlace al archivo CSS externo para aplicar estilos a esta página -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- Cuerpo de la página: todo el contenido visible para el usuario va aquí -->
+<body>
+
+    <!-- Sección de encabezado principal -->
+    <header> <!-- <header> representa un encabezado de sección o de toda la página -->
+        
+        <!-- <div> es un contenedor genérico sin significado semántico, se usa para agrupar contenido -->
+        <div class="container"> <!-- Se usa una clase llamada 'container' que se puede definir en CSS -->
+            
+            <!-- <h1> representa el título principal de la página, debe haber solo uno por página -->
+            <h1>¡Bienvenido a nuestra página!</h1>
+            
+            <!-- <p> es un párrafo de texto -->
+            <p>Sitio web de muestra para una empresa ficticia</p>
+            
+            <!-- <a> es un enlace. En este caso, con href="#features" apunta a una sección de la misma página -->
+            <a href="#features" class="btn">Ver características</a> <!-- class="btn" sirve para aplicar estilos CSS -->
+        
+        </div> <!-- Cierra el contenedor -->
+    </header>
+
+    <!-- Sección de características -->
+    <section id="features"> <!-- <section> define una sección temática del documento. id="features" sirve como ancla -->
+        <div class="container"> <!-- Contenedor para alinear contenido con márgenes -->
+            
+            <!-- <h2> es un subtítulo, de menor jerarquía que <h1> -->
+            <h2>Características principales</h2>
+            
+            <!-- Cada característica va en un <div> con clase "feature" -->
+            <div class="feature">
+                <h3>Facilidad de uso</h3> <!-- <h3> es un subtítulo de tercer nivel -->
+                <p>Nuestra plataforma es fácil de usar para cualquier persona, sin importar su experiencia.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Diseño moderno</h3>
+                <p>Nuestro diseño está actualizado con las últimas tendencias para brindar la mejor experiencia al usuario.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Soporte 24/7</h3>
+                <p>Ofrecemos soporte técnico las 24 horas del día, los 7 días de la semana, para ayudarte en cualquier momento.</p>
+            </div>
+
+        </div> <!-- Fin del contenedor -->
+    </section>
+
+    <!-- Sección de testimonios de usuarios -->
+    <section id="testimonials"> <!-- id="testimonials" permite enlazar directamente a esta sección -->
+        <div class="container">
+            <h2>Testimonios</h2>
+
+            <!-- Cada testimonio en un bloque <div> con clase testimonial -->
+            <div class="testimonial">
+                <p>"¡Increíble servicio! ¡Gracias por hacer mi vida más fácil!"</p> <!-- Texto del testimonio -->
+                <cite>- Cliente feliz</cite> <!-- <cite> indica la fuente de una cita -->
+            </div>
+
+            <div class="testimonial">
+                <p>"Nunca pensé que encontraría una solución tan genial. ¡Recomendado al 100%!"</p>
+                <cite>- Otro cliente satisfecho</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto con formulario -->
+    <section id="contact"> <!-- id="contact" permite enlazar esta sección con un ancla -->
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <!-- <form> crea un formulario para enviar información -->
+            <form action="#" method="post"> <!-- action="#" significa que el formulario no está conectado aún a un servidor -->
+                
+                <!-- Campo de texto para el nombre del usuario -->
+                <input type="text" name="name" placeholder="Nombre" required>
+                
+                <!-- Campo para ingresar un correo electrónico -->
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                
+                <!-- Campo grande para escribir un mensaje -->
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+                
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn">Enviar mensaje</button>
+            
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página del sitio -->
+    <footer> <!-- <footer> contiene la información del pie de página de la página web -->
+        <div class="container">
+            <p>&copy; 2025 Compañía XYZ. Todos los derechos reservados.</p> <!-- &copy; muestra el símbolo de copyright -->
+        </div>
+    </footer>
+
+</body>
+</html> <!-- Fin del documento HTML -->
+

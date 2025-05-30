@@ -1,0 +1,122 @@
+/* Aplica estilos generales al cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Usa la fuente Arial o, si no está disponible, una fuente genérica sans-serif */
+    margin: 0;                      /* Elimina el margen externo del body */
+    padding: 0;                     /* Elimina el relleno interno del body */
+}
+
+/* Clase reutilizable para contener el contenido centrado en la página */
+.container {
+    width: 80%;         /* Establece el ancho del contenido en el 80% del ancho del navegador */
+    margin: 0 auto;     /* Centra horizontalmente el contenedor */
+    padding: 20px 0;    /* Añade relleno vertical (arriba y abajo) de 20px */
+}
+
+/* Estilos para el encabezado principal */
+header {
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: #fff;            /* Color del texto blanco */
+    text-align: center;     /* Centra el texto dentro del encabezado */
+    padding: 100px 0;       /* Relleno vertical grande (arriba y abajo) de 100px */
+}
+
+/* Estilo para el título h1 dentro del encabezado */
+header h1 {
+    font-size: 2.5em; /* Aumenta el tamaño de la fuente del título */
+}
+
+/* Clase para los botones de enlace */
+.btn {
+    display: inline-block;             /* Hace que el enlace se comporte como un botón en línea */
+    background-color: #007bff;         /* Color de fondo azul */
+    color: #fff;                       /* Texto blanco */
+    padding: 10px 20px;                /* Espacio interno de 10px arriba/abajo y 20px izquierda/derecha */
+    text-decoration: none;             /* Quita el subrayado del enlace */
+    border-radius: 5px;                /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Animación suave al cambiar el color de fondo */
+}
+
+/* Estilo del botón cuando el cursor está encima */
+.btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo a un azul más oscuro */
+}
+
+/* Aplica un relleno vertical a todas las secciones */
+section {
+    padding: 50px 0; /* Relleno de 50px arriba y abajo */
+}
+
+/* Centra todos los títulos h2 */
+h2 {
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para cada bloque de característica */
+.feature {
+    text-align: center;       /* Centra el texto */
+    margin-bottom: 30px;      /* Añade espacio debajo de cada característica */
+}
+
+/* Tamaño del subtítulo de cada característica */
+.feature h3 {
+    font-size: 1.5em; /* Aumenta el tamaño del subtítulo */
+}
+
+/* Estilo general de cada testimonio */
+.testimonial {
+    background-color: #f9f9f9; /* Color de fondo gris muy claro */
+    padding: 20px;             /* Espaciado interno de 20px */
+    border-radius: 5px;        /* Bordes redondeados */
+    margin-bottom: 30px;       /* Espacio debajo de cada testimonio */
+}
+
+/* Estilo del texto del testimonio */
+.testimonial p {
+    font-style: italic; /* Texto en cursiva */
+}
+
+/* Estilo del nombre del cliente (quien da el testimonio) */
+.testimonial cite {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para el formulario de contacto */
+form {
+    max-width: 600px;   /* El ancho máximo del formulario será de 600px */
+    margin: 0 auto;     /* Centra el formulario horizontalmente */
+}
+
+/* Estilo compartido para los campos de texto, correo y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;            /* Ocupan todo el ancho del contenedor */
+    padding: 10px;          /* Relleno interno de 10px */
+    margin-bottom: 20px;    /* Espacio inferior entre campos */
+    border-radius: 5px;     /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Estilo del botón para enviar el formulario */
+button[type="submit"] {
+    background-color: #007bff;         /* Color de fondo azul */
+    color: #fff;                       /* Texto blanco */
+    border: none;                      /* Sin borde */
+    padding: 10px 20px;                /* Relleno interno del botón */
+    border-radius: 5px;                /* Bordes redondeados */
+    cursor: pointer;                   /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+/* Estilo cuando el cursor pasa sobre el botón de envío */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Color azul más oscuro al hacer hover */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff;            /* Texto blanco */
+    text-align: center;     /* Centra el texto */
+    padding: 20px 0;        /* Relleno vertical arriba y abajo */
+}
